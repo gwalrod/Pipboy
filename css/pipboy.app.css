@@ -49,36 +49,45 @@ body::after {
     right: 0px;
 }
 
+#mainNavbar {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
 .navbar, ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, #mainNavbar {
     color: #14fe17 !important;
     background: #273b23 !important;
     font-size: 32px;
     line-height: 22px;
     padding: 5px;
+    position: relative;
 }
 
-.nav-item.active::before {
+.nav-item.active > .nav-link::before {
     content: "";
-    width: 15%;
-    height: 26px;
-    top: 28px;
+    width: 150%;
+    height: 27px;
+    top: 17px;
     background: #273b23;
     border-left: 2px solid;
     border-right: 2px solid;
     border-top: 2px solid;
     position: absolute;
-    left: 38px;
+    left: -28px;
+    z-index: -1;
 }
 
-.navbar-nav > li.nav-item > nav.link,
+
+.navbar-nav > li.nav-item > .nav-link,
 .navbar-nav > li.nav-item.active > .nav-link{
     text-align: center;
     width: 50%;
     margin: auto;
-    z-index: 50;
     position: relative;
-    background: #273b23;
+    background: #273b23!important;
+    z-index:50;
 }
+
 
 .navbar-nav {
     width: 100%;
@@ -110,13 +119,17 @@ body::after {
     width: 96%;
     margin: 10px;
     padding: 5px 10px;
-    background: rgba(16, 255, 0, .15);
     font-size: 22px;
 }
 
 .pipboy-footer .col-6 {
     margin: 0px 5px;
     flex: 0 0 48%;
+    background: rgba(16, 255, 0, .15);
+}
+
+.pipboy-footer .text-left, .pipboy-footer .text-right{
+    background: rgba(16, 255, 0, .15);
 }
 
 .nav.nav-tabs {
@@ -193,6 +206,31 @@ body::after {
 
 .stat-numbers .col-1.transparent , .stat-numbers .col-2.transparent {
     background: transparent;
+}
+
+.stat-numbers img {
+    width: 100%;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.stat-numbers img.crosshairs-img {
+    width: 24px;
+    margin-left: -8px;
+}
+
+.stat-numbers img.helmet-img {
+    width:44px;
+    margin-top: 8px;
+}
+
+.stat-numbers img.lightning-img {
+    width: 20px;
+    margin-left: -8px;
+}
+
+.stat-numbers img.radiation-img {
+    width: 17px;
+    margin-left: -5px;
 }
 
 .w10 {
