@@ -233,6 +233,43 @@ body::after {
     margin-left: -5px;
 }
 
+#weapons.tab-pane.active.full{
+    width: 770px;
+    max-width: 100%;
+}
+
+.item-list {
+    float: left;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.item-list li a {
+    display: block;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #14fe17;
+}
+
+.item-list li a:hover {
+    text-decoration: none;
+    background: #14fe17;
+    color: #273b23;
+}
+
+.tab-pane.full {
+    height: calc(100vh - 180px);
+}
+
+.item-stats {
+    position: absolute;
+    right: 60px;
+    bottom: 100px;
+    width: 300px
+}
+
 .w10 {
     width: 10%;
 }
