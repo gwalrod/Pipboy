@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3G's Pipboy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pipboy.app.css" />
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">STAT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inv.html">INV </a>
+                        
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="data.html">DATA </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">MAP </a>
+                        
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="date-tab" data-toggle="tab" href="#weapons" role="tab">DATE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="clock-tab" data-toggle="tab" href="#armor" role="tab">CLOCK</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active full" id="weapons" role="tabpanel" aria-labelledby="weapons-tab">
+                        <ul class="item-list">
+                         //placeholder for calendar
+                        </ul>
+
+                        <div class="item-stats">
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="locations pull-right">7</div>
+                                        <div class="pull-left">Locations Discovered</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="days pull-right">300</div>
+                                        <div class="pull-left">Days Passed</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="caps pull-right">3</div>
+                                        <div class="pull-left">Caps Found</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="armor" role="tabpanel" aria-labelledby="armor-tab">
+                        <ul class="item-list">
+                           //placeholder for clock
+                        </ul>
+
+                        <div class="item-stats">
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="locations pull-right">7</div>
+                                        <div class="pull-left">Locations Discovered</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="days pull-right">300</div>
+                                        <div class="pull-left">Days Passed</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="caps pull-right">3</div>
+                                        <div class="pull-left">Caps Found</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="pipboy-footer"> 
+            <div class="row">
+                <div class="col text-left">
+                    HP 90/90
+                </div>
+                <div class="col-6">
+                    <span>LEVEL 1</span>
+                        <div class="level-progress">
+                                <div class="level-progress-indicator"></div>
+                        </div>
+                </div>
+                <div class="col text-right">
+                    AP 70/70
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/pipboy.app.js"></script>
+
+    </body>
+</html>
