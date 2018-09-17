@@ -50,8 +50,8 @@ body::after {
 }
 
 #mainNavbar {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 .navbar, ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, #mainNavbar {
@@ -247,16 +247,32 @@ body::after {
 
 .item-list li a {
     display: block;
-    width: 300px;
+    width: 400px;
     padding: 5px 10px;
     border-radius: 2px;
     color: #14fe17;
+    padding-left: 25px;
 }
 
 .item-list li a:hover {
     text-decoration: none;
     background: #14fe17;
     color: #273b23;
+}
+
+.item-list li a.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #14fe17;
+    left: 443px;
+    margin-top: 7px;
+}
+
+.item-list li a.active:hover::before {
+    background: #273b23;
 }
 
 .tab-pane.full {
@@ -267,7 +283,33 @@ body::after {
     position: absolute;
     right: 60px;
     bottom: 100px;
-    width: 300px
+    width: 200px;
+}
+
+.item-stats .row .col-12 {
+    background: rgba(16, 255, 0, .15);
+    margin-bottom: 2px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.center-map {
+    position: absolute;
+}
+
+.center-map img{
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 550px;
+    margin-top: 78px;
+    margin-left: 201px;
 }
 
 .w10 {

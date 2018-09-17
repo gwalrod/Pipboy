@@ -31,13 +31,10 @@
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MAP </a>
+                        <a class="nav-link" href="map.html">MAP </a>
                         
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RADIO </a>
-                        
-                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -47,13 +44,13 @@
                 <div class="col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link" id="status-tab" data-toggle="tab" href="#weapons" role="tab">WEAPONS</a>
+                            <a class="nav-link" id="weapons-tab" data-toggle="tab" href="#weapons" role="tab">WEAPONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="special-tab" data-toggle="tab" href="#armor" role="tab">ARMOR</a>
+                            <a class="nav-link" id="armor-tab" data-toggle="tab" href="#armor" role="tab">ARMOR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="perks-tab" data-toggle="tab" href="#aid" role="tab">AID</a>
+                            <a class="nav-link" id="consumables-tab" data-toggle="tab" href="#consumables" role="tab">CONSUMABLES</a>
                         </li>
                     </ul>
                 </div>
@@ -64,22 +61,161 @@
                             <li><a href="#" class="44_pistol">.44 Pistol</a></li>
                             <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
                             <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                            <li><a href="#" class="missile_launcher">Missile Launcher</a></li>
+                            <li><a href="#" class="final_judgement">Final Judgement</a></li>
                         </ul>
 
                         <div class="item-stats">
                             <div class"row-highlight">
                                 <div class="row">
                                     <div class="col-12">
-                                        <span class="damage pull-right"></span>
-                                        Damage
+                                        <div class="damage pull-right"></div>
+                                        <div class="pull-left">Damage</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="ammo pull-right"></div>
+                                        <div class="pull-left">Ammo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="fire_rate pull-right"></div>
+                                        <div class="pull-left">Fire Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="accuracy pull-right"></div>
+                                        <div class="pull-left">Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="weight pull-right"></div>
+                                        <div class="pull-left">Weight</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="value pull-right"></div>
+                                        <div class="pull-left">Value</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="tab-pane" id="armor" role="tabpanel" aria-labelledby="armor-tab">...</div>
-                    <div class="tab-pane" id="aid" role="tabpanel" aria-labelledby="aid-tab">...</div>
+                    <div class="tab-pane" id="armor" role="tabpanel" aria-labelledby="armor-tab">
+                        <ul class="item-list">
+                            <li><a href="#" class="raider_chest_piece">Raider Chest Piece</a></li>
+                            <li><a href="#" class="leather_chest_piece">Leather Chest Piece</a></li>
+                            <li><a href="#" class="metal_helmet">Metal Helmet</a></li>
+                            <li><a href="#" class="robot_leg">Robot Leg</a></li>
+                            <li><a href="#" class="trapper_arm">Trapper Arm</a></li>
+                        </ul>
+
+                        <div class="item-stats">
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="damage_resist pull-right"></div>
+                                        <div class="pull-left">Damage Resist</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="weight pull-right"></div>
+                                        <div class="pull-left">Weight</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="value pull-right"></div>
+                                        <div class="pull-left">Value</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="consumables" role="tabpanel" aria-labelledby="aid-tab">
+                        <ul class="item-list">
+                            <li><a href="#" class="deathclaw_steak">Deathclaw Steak</a></li>
+                            <li><a href="#" class="radstag_stew">Radstag Stew</a></li>
+                            <li><a href="#" class="bloodbug_meat">Bloodbug Meat</a></li>
+                            <li><a href="#" class="noodle_cup">Noodle Cup</a></li>
+                        </ul>
+
+                        <div class="item-stats">
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="addiction pull-right"></div>
+                                        <div class="pull-left">Addiction</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="recipe pull-right"></div>
+                                        <div class="pull-left">Recipe</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="plantable pull-right"></div>
+                                        <div class="pull-left">Plantable</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="weight pull-right"></div>
+                                        <div class="pull-left">Weight</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class"row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="value pull-right"></div>
+                                        <div class="pull-left">Value</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
