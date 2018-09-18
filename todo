@@ -1,9 +1,7 @@
 1. fix margins
 2. fix footer borders spacing and had to do 96% margin
-3. fix tab content locations for weapons etc
 4. fix map image location
 5. fix navbar
-6. adding images to javascript
 7. fix on click to override hover
 
 review how to remove importants

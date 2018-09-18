@@ -44,19 +44,26 @@
                 <div class="col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link" id="date-tab" data-toggle="tab" href="#weapons" role="tab">DATE</a>
+                            <a class="nav-link" id="date-tab" data-toggle="tab" href="#date" role="tab">DATE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="clock-tab" data-toggle="tab" href="#armor" role="tab">CLOCK</a>
+                            <a class="nav-link" id="clock-tab" data-toggle="tab" href="#clock" role="tab">CLOCK</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="tab-content">
-                    <div class="tab-pane active full" id="weapons" role="tabpanel" aria-labelledby="weapons-tab">
-                        <ul class="item-list">
-                         //placeholder for calendar
+                    <div class="tab-pane active" id="date" role="tabpanel" aria-labelledby="date-tab">
+                        <ul class="month-list">
+                            <li><a id="month"></a></li>
+                            <li><a id="day_number"></a></li>
+                            <li><a id="day_text"></a></li>
                         </ul>
+
+                        <div class="data-image">
+                            <img src="img/Nerd_Rage!.png"> </br>
+                            <a>3G's Pipboy</a>
+                        </div>
 
                         <div class="item-stats">
                             <div class"row-highlight">
@@ -88,10 +95,16 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane" id="armor" role="tabpanel" aria-labelledby="armor-tab">
-                        <ul class="item-list">
-                           //placeholder for clock
+                    <div class="tab-pane" id="clock" role="tabpanel" aria-labelledby="clock-tab">
+                        <ul class="clock-list">
+                            <li><a id="clock"></a></li>
                         </ul>
+
+                        <div class="data-image">
+                            <img src="img/Nerd_Rage!.png"> </br>
+                            <a>3G's Pipboy</a>
+                        </div>
+
 
                         <div class="item-stats">
                             <div class"row-highlight">
@@ -102,7 +115,7 @@
                                     </div>
                                 </div>
                             </div>
-
+    
                             <div class"row-highlight">
                                 <div class="row">
                                     <div class="col-12">
@@ -111,7 +124,7 @@
                                     </div>
                                 </div>
                             </div>
-
+    
                             <div class"row-highlight">
                                 <div class="row">
                                     <div class="col-12">
@@ -121,6 +134,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     
                 </div>
