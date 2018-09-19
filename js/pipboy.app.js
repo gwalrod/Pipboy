@@ -272,7 +272,10 @@ function showDate(){
     
 }
 
-showDate();
+if(document.getElementById("month")){
+
+    showDate();
+};
 
 function showTime(){
     var date = new Date();
@@ -302,7 +305,10 @@ function showTime(){
     
 }
 
-showTime();
+if(document.getElementById("live-clock")){
+
+    showTime();
+};
 
 var map;
 function initMap() {

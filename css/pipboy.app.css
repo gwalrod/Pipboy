@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: Pipboy;
     src: url('../monofonto.ttf');
@@ -55,8 +56,8 @@ body::after {
 }
 
 .navbar, ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link, #mainNavbar {
-    color: #14fe17 !important;
-    background: #273b23 !important;
+    color: #14fe17 !important; /*researched how to fix in bootstrap css but used important to save time for now*/
+    background: #273b23 !important; /*researched how to fix in bootstrap css but used important to save time for now*/
     font-size: 32px;
     line-height: 22px;
     padding: 5px;
@@ -102,11 +103,11 @@ body::after {
 }
 
 .nav-tabs .nav-link {
-    border: none!important;
+    border: none!important; /*researched how to fix in bootstrap css but used important to save time for now*/
 }
 
 .nav-tabs .nav-link.active {
-    border-bottom: 2px solid!important;
+    border-bottom: 2px solid!important; /*researched how to fix in bootstrap css but used important to save time for now*/
 }
 
 .center-image {
@@ -397,15 +398,9 @@ body::after {
     margin-top: -290px;
 }
 
-.item-xsm img{
+.item-xsm img {
    margin-top: -40px;  
    height: 150px;
-}
-
-.top-nav {
-    color: #ffffff;
-    background: pink;
-    z-index: 100;
 }
 
 #google {
