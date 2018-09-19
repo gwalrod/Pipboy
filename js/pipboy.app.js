@@ -307,7 +307,7 @@ showTime();
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('google'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: {lat: 41.85, lng: -87.65},
+        zoom: 10
     });
 }
