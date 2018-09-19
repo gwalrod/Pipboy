@@ -204,34 +204,13 @@ $(document).ready(function(){
         $(e.currentTarget).addClass('active');
     });
 
-    $('.item-list a').on('mouseenter', function(e){
-        var current_item = $(e.currentTarget).data("name");
-        console.log(current_item);
-
-        for(item in inventory){
-            if(inventory[item].name == current_item){
-                console.log(inventory[item]);
-
-                var container = $('.item-stats');
-                container.find('.damage').html(inventory[item].damage);
-                container.find('.ammo').html(inventory[item].ammo);
-                container.find('.fire_rate').html(inventory[item].fire_rate);
-                container.find('.range').html(inventory[item].range);
-                container.find('.accuracy').html(inventory[item].accuracy);
-                container.find('.weight').html(inventory[item].weight);
-                container.find('.value').html(inventory[item].value);
-                container.find('.damage_resist').html(inventory[item].damage_resist);
-                container.find('.addiction').html(inventory[item].addiction);
-                container.find('.recipe').html(inventory[item].recipe);
-                container.find('.plantable').html(inventory[item].plantable);
-                container.find('.description').html(inventory[item].description);
-                container.find('.item-image').html(`<img src="${inventory[item].item_image}" />`);
-            }
-        }
+    $('.item-list a').on('click', function(e){
+        $('.item-list a').removeClass('active');
+        $(e.currentTarget).addClass('active');
     });
 
-    $('.item-list a').on('mouseleave', function(e){
-        var current_item = $('.item-list a.active').data("name");
+    $('.item-list a').on('mouseenter', function(e){
+        var current_item = $(e.currentTarget).attr('class');
         console.log(current_item);
 
         for(item in inventory){
@@ -295,11 +274,21 @@ function showTime(){
     s = (s < 10) ? "0" + s : s;
     
     var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("live-clock").innerText = time;
-    document.getElementById("live-clock").textContent = time;
+    document.getElementById("clock").innerText = time;
+    document.getElementById("clock").textContent = time;
     
     setTimeout(showTime, 1000);
     
 }
 
 showTime();
+
+/*var map;
+function initMap(){
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+    });
+}
+
+initMap();*/
