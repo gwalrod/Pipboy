@@ -73,9 +73,10 @@ body::after {
     border-right: 2px solid;
     border-top: 2px solid;
     position: absolute;
-    left: -44px;
+    left: -50px;
     z-index: -1;
     border-radius: 2px;
+    max-width: 260px;
 }
 
 
