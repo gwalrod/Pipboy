@@ -152,10 +152,6 @@ body::after {
     border: none;
 }
 
-.nav.nav-tabs > .nav-item > .nav-link:hover {
-    border: 1px solid transparent;
-}
-
 .nav.nav-tabs > li > a {
     font-size: 26px;
     background: transparent;
