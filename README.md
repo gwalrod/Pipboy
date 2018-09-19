@@ -14,6 +14,6 @@ The pipboy.app.css highlightsmy understanding of styling. I learned that devtool
 
 The pipboy.app.js shows my understanding of jQuery where I built some functionality where you hover over items to show more details and you can click to maintain that item. I also outside of jQuery wrote a couple functions to update the date clock tabs to the exact of each.
 
-To get the site going drag index.html into your browser or go to this link where I have hosted it here:
+To get the site going drag index.html into your browser or go to this link where I have hosted it here: https://gwalrod.github.io/Pipboy/
 
 I look forward to learning more and to your feedback. I know I have a long way to go and am excited for the journey ahead!
