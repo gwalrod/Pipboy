@@ -406,6 +406,14 @@ body::after {
     z-index: 100;
 }
 
+#google {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    margin: 40px 110px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
 .w10 {
     width: 10%;
 }
