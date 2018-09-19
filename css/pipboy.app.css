@@ -65,16 +65,17 @@ body::after {
 
 .nav-item.active > .nav-link::before {
     content: "";
-    width: 150%;
-    height: 54px;
-    top: -10px;
+    width: 190%;
+    height: 28px;
+    top: 16px;
     background: #273b23;
     border-left: 2px solid;
     border-right: 2px solid;
     border-top: 2px solid;
     position: absolute;
-    left: -28px;
+    left: -44px;
     z-index: -1;
+    border-radius: 2px;
 }
 
 
@@ -412,6 +413,13 @@ body::after {
     height: 75%;
     margin: 40px 110px;
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.top-nav {
+    background: #273b23;
+    padding: 0px 15px;
+    color: #14fe17;
+    margin-left: -18px;
 }
 
 .w10 {
